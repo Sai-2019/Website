@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"; // Import custom styles
 import profilePic from "./assets/profile.jpg"; // Import profile picture
-
 const generateRandomCode = () => {
   const codeSamples = [
     "console.log('Hello World!');",
@@ -69,7 +68,7 @@ function App() {
       </div>
       <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
