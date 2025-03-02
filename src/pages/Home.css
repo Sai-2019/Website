@@ -1,0 +1,124 @@
+/* Home Page Styles */
+.home-container {
+    min-height: 100vh;
+    
+    color: rgb(14, 13, 13);
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Animated Text Effect */
+  .animated-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  /* List Styling */
+  .home-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .home-list li {
+    font-size: 1.2rem;
+    padding: 5px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .home-list li:hover {
+    transform: translateX(10px);
+    color: #e94560;
+  }
+  
+  /* Description Text */
+  .description-text {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    opacity: 0.8;
+  }
+  
+  /* Call to Action */
+  .cta-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  .mt-3 {
+    margin-top: 20px;
+  }
+  /* Ensure images are responsive */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust as needed */
+  }
+  
+  
+  /* Ensure Cards Align Properly */
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 300px; /* Ensures enough space for text */
+    padding: 15px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  /* Responsive Image Container */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Adjust as needed */
+    min-height: 210px; /* Prevents text from overlapping */
+    padding: 10px;
+  }
+  
+  /*     Skill Icon */
+  .skill-icon {
+    max-width: 70px;
+    height: auto;
+    
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Description Text Adjustments */
+  .text-muted {
+    font-size: 14px;
+    opacity: 0.8;
+    min-height: 100px; /* Ensures enough space for descriptions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
