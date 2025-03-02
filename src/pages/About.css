@@ -1,0 +1,71 @@
+/* About Page Container */
+.about-container {
+   
+    padding: 60px 20px;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* About Title */
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0b0b0b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Profile Image */
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* About Text */
+  .about-text {
+    font-size: 1.2rem;
+    color: #111111;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Highlight Boxes */
+  .highlight-box {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .highlight-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .profile-img {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .about-text {
+      font-size: 1rem;
+    }
+  }
+  

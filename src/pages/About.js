@@ -1,21 +1,67 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import "./About.css";
+import profileImage from "../assets/profile.jpg";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <Container>
-      <h1 className="mt-4">About Me</h1>
-      <p>
-      I am an experienced Full Stack Developer and Data Analyst with a strong background in software development and data analytics. With over two years of experience in the automotive and financial sectors, I specialize in building scalable applications, optimizing data pipelines, and managing enterprise workflows. My expertise spans across Java, React, Node.js, SQL, MongoDB, DataStage, and Teradata, allowing me to develop efficient solutions for complex data processing and software development challenges.
+    <Container fluid className="about-container text-center">
+      <motion.h1 
+        className="about-title"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        About Me
+      </motion.h1>
 
-I thrive in Agile environments, ensuring seamless collaboration with cross-functional teams to deliver high-performing applications. My skill set includes ETL development, RESTful API design, microservices architecture, trend analysis, and reporting, all of which contribute to data-driven decision-making and business optimization.
+      <Row className="justify-content-center align-items-center">
+        <Col md={4} className="d-flex justify-content-center">
+          <motion.img
+            src={profileImage}
+            alt="Sai Bharadwaj"
+            className="profile-img"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          />
+        </Col>
+        <Col md={6} className="text-left">
+          <motion.p
+            className="about-text"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            I am <strong>Sai Bharadwaj</strong>, a passionate Full Stack Developer & Data Analyst
+            with 2+ years of experience in software development and data analytics.
+            I specialize in building scalable web applications, performing data-driven analysis, and
+            optimizing ETL pipelines. I have worked in the automotive and financial sectors, leveraging
+            technologies such as Java,Python, React, Node.js, SQL, MongoDB, DataStage, Teradata, ServiceNow, R, ETL, CI/CD, AWS, Machine Learning, and Tableau.
+          </motion.p>
 
-Currently pursuing an MS in Applied Computer Science at Grand Valley State University, I am passionate about leveraging my knowledge to drive innovation in software and data solutions. I am always eager to learn new technologies, enhance data-driven processes, and contribute to impactful projects that bridge the gap between data science and software engineering.
+          <motion.div
+            className="highlight-box"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.2, delay: 1.5 }}
+          >
+            <h5>💡 Passion for Technology</h5>
+            <p>I love solving problems through coding and enjoy exploring new technologies.</p>
+          </motion.div>
 
-Let's connect and collaborate on data-driven solutions!
-      </p>
-      <h2 className="mt-3">Technologies & Skills:</h2>
-      <p>Java, React, Node.js, SQL, MongoDB, Python, R, ETL, CI/CD, Google Cloud</p>
+          <motion.div
+            className="highlight-box"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.2, delay: 1.8 }}
+          >
+            <h5>🚀 Continuous Learning</h5>
+            <p>Always eager to learn new frameworks, tools, and techniques to stay ahead in the tech world.</p>
+          </motion.div>
+        </Col>
+      </Row>
     </Container>
   );
 };

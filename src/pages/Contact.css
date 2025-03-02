@@ -1,0 +1,70 @@
+/* Contact Page Container */
+.contact-container {
+    background: linear-gradient(to right, #BFF098, #6FD6FF);
+    padding: 60px 20px;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title Styling */
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #141313;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Contact Info Box */
+  
+  
+  .contact-info:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Contact Items */
+  .contact-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-item a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .contact-item a:hover {
+    color: #0033cc;
+  }
+  
+  /* Contact Icons */
+  .contact-icon {
+    font-size: 1.8rem;
+    color: #151515;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-item {
+      font-size: 1rem;
+    }
+  
+    .contact-icon {
+      font-size: 1.5rem;
+    }
+  }
+  

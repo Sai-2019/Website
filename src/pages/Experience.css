@@ -1,0 +1,71 @@
+/* Work Experience Page Container */
+.experience-container {
+   
+    padding: 60px 20px;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .experience-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0e0e0e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Experience Cards */
+  .experience-card {
+    background: rgba(11, 11, 11, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .experience-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Card Content */
+  .experience-card .card {
+    background: rgba(143, 236, 238, 0.8);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .experience-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .experience-card .card-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .experience-card .card-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-title {
+      font-size: 2rem;
+    }
+  
+    .experience-card {
+      padding: 10px;
+    }
+  
+    .experience-card .card-title {
+      font-size: 1.2rem;
+    }
+  }
+  

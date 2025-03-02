@@ -5,14 +5,14 @@ import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"; // Import custom styles
 import profilePic from "./assets/profile.jpg"; // Import profile picture
-import { Helmet } from "react-helmet";
-import { useEffect } from "react";
+
+
 
 
 const generateRandomCode = () => {
@@ -68,24 +68,13 @@ function App() {
         <section id="projects"><Projects /></section>
         <section id="skills"><Skills /></section>
         <section id="contact"><Contact /></section>
-        <section id="resume"><Resume /></section>
+        
       </div>
       <Footer />
     </div>
   )
   
 
-  function App() {
-    useEffect(() => {
-      document.title = "Sai Bharadwaj Portfolio";
-    }, []);
-  
-    return (
-      <div>
-        <h1>Welcome to My Portfolio</h1>
-      </div>
-    );
-  }
 }
 
 export default App;
