@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"; // Import custom styles
 import profilePic from "./assets/profile.jpg"; // Import profile picture
+import { Helmet } from "react-helmet";
 const generateRandomCode = () => {
   const codeSamples = [
     "console.log('Hello World!');",
@@ -69,6 +70,21 @@ function App() {
       <Footer />
     </div>
   )
+  
+
+function App() {
+  return (
+    <>
+      <Helmet>
+        <title>Sai Bharadwaj Portfolio</title>
+        <meta name="description" content="Sai Bharadwaj - Full Stack Developer & Data Analyst." />
+      </Helmet>
+      <div className="App">
+        <h1>Welcome to My Portfolio</h1>
+      </div>
+    </>
+  );
+}
 }
 
 export default App;
