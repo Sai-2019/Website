@@ -1,8 +1,8 @@
 /* About Page Container */
 .about-container {
    
-    padding: 60px 20px;
-    min-height: 100vh;
+    padding: 1px -0.5px;
+    min-height: 50vh;
     text-align: center;
   }
   

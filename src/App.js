@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
+import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
@@ -59,12 +60,13 @@ function App() {
       <header className="header-section text-center">
         <img src={profilePic} alt="Sai Bharadwaj Gundeboina" className="profile-pic" />
         <h1 className="header-title">Sai Bharadwaj Gundeboina</h1>
-        <p className="header-subtitle">Full Stack Developer & Data Analyst</p>
+        <p className="header-subtitle"> Data Analyst || Full Stack Developer</p>
       </header>
       <div className="container-fluid p-0">
         <section id="home"><Home /></section>
         <section id="about"><About /></section>
         <section id="experience"><Experience /></section>
+        <section id="education"><Education /></section>
         <section id="projects"><Projects /></section>
         <section id="skills"><Skills /></section>
         <section id="contact"><Contact /></section>

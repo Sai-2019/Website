@@ -1,0 +1,77 @@
+/* Education Page Container */
+.education-container {
+    
+    padding: 0px 0px;
+    min-height: 5vh;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .education-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #131313;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Education Card */
+  .education-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Card Content */
+  .education-card .card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .education-card .card-title a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0033cc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .education-card .card-title a:hover {
+    color: #ff6600;
+  }
+  
+  .education-card .card-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .education-card .card-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .education-title {
+      font-size: 2rem;
+    }
+  
+    .education-card {
+      padding: 10px;
+    }
+  
+    .education-card .card-title a {
+      font-size: 1.2rem;
+    }
+  }
+  
